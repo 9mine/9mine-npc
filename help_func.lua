@@ -5,6 +5,7 @@ get_dir = function(host, port, dir)
     local conn = np.attach(tcp, "root", "")
     local result, content = pcall(readdir, conn, dir)
     tcp:close()
+    return result, content
 end
 
 get_npcs = function()

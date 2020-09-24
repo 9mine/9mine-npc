@@ -6,6 +6,7 @@ socket = require 'socket'
 pprint = require 'pprint'
 readdir = require 'readdir'
 parted = true
+function table.clone(org) return {table.unpack(org)} end
 local path = minetest.get_modpath("9mine_npc")
 dofile(path .. "/config.lua")
 dofile(path .. "/help_func.lua")

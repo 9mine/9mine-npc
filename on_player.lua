@@ -15,4 +15,3 @@ minetest.register_on_generated(function(minp, maxp, blockseed)
         platforms.create({x = 0, y = 0, z = 0}, 16, "horizontal")
     end
 end)
-
